@@ -26,8 +26,3 @@ env:
     key1: value1
   secrets:
     key2: value2
-
-env:
-  secrets: ${secrets.getValue("newsc")}
-  config:
-    db_user: svc_notReal
