@@ -1,0 +1,50 @@
+inputSet:
+  identifier: "cdinput1"
+  pipeline:
+    identifier: "pBugremote"
+    stages:
+    - parallel:
+      - stage:
+          identifier: "s1"
+          template:
+            templateInputs:
+              type: "Deployment"
+              spec:
+                service:
+                  serviceRef: "S1Copy"
+                environment:
+                  environmentRef: "eref"
+      - stage:
+          identifier: "s3"
+          template:
+            templateInputs:
+              type: "Deployment"
+              spec:
+                service:
+                  serviceRef: "S1Copy"
+                environment:
+                  environmentRef: "eref"
+    - parallel:
+      - stage:
+          identifier: "s4"
+          template:
+            templateInputs:
+              type: "Deployment"
+              spec:
+                service:
+                  serviceRef: "S1Copy"
+                environment:
+                  environmentRef: "eref"
+      - stage:
+          identifier: "s5"
+          template:
+            templateInputs:
+              type: "Deployment"
+              spec:
+                service:
+                  serviceRef: "S1Copy"
+                environment:
+                  environmentRef: "eref"
+  name: "cdinput1"
+  orgIdentifier: "default"
+  projectIdentifier: "TcSvcOverrideTest"
