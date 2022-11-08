@@ -10,7 +10,7 @@ pipeline:
             name: s1
             identifier: s1
             template:
-              templateRef: stagetemp1
+              templateRef: stagetemp3
               versionLabel: "1"
               templateInputs:
                 type: Deployment
