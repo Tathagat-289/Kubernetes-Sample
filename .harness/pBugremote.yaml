@@ -1,0 +1,79 @@
+pipeline:
+  name: pBug-remote
+  identifier: pBugremote
+  projectIdentifier: TcSvcOverrideTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - parallel:
+        - stage:
+            name: s1
+            identifier: s1
+            template:
+              templateRef: stagetemp1
+              versionLabel: "1"
+              templateInputs:
+                type: Deployment
+                spec:
+                  service:
+                    serviceRef: <+input>
+                    serviceInputs: <+input>
+                  environment:
+                    environmentRef: <+input>
+                    environmentInputs: <+input>
+                    infrastructureDefinitions: <+input>
+        - stage:
+            name: s3
+            identifier: s3
+            template:
+              templateRef: stagetemp2
+              versionLabel: "1"
+              templateInputs:
+                type: Deployment
+                spec:
+                  service:
+                    serviceRef: <+input>
+                    serviceInputs: <+input>
+                  environment:
+                    environmentRef: <+input>
+                    environmentInputs: <+input>
+                    infrastructureDefinitions: <+input>
+    - stage:
+        name: s2
+        identifier: s2
+        template:
+          templateRef: stage4
+          versionLabel: "1"
+    - parallel:
+        - stage:
+            name: s4
+            identifier: s4
+            template:
+              templateRef: stagetemp3
+              versionLabel: "1"
+              templateInputs:
+                type: Deployment
+                spec:
+                  service:
+                    serviceRef: <+input>
+                    serviceInputs: <+input>
+                  environment:
+                    environmentRef: <+input>
+                    environmentInputs: <+input>
+                    infrastructureDefinitions: <+input>
+        - stage:
+            name: s5
+            identifier: s5
+            template:
+              templateRef: stagetemp1
+              versionLabel: "1"
+              templateInputs:
+                type: Deployment
+                spec:
+                  service:
+                    serviceRef: <+input>
+                    serviceInputs: <+input>
+                  environment:
+                    environmentRef: <+input>
+                    environmentInputs: <+input>
+                    infrastructureDefinitions: <+input>
