@@ -1,5 +1,9 @@
 inputSet:
   identifier: "cdinput1"
+  name: "cdinput1"
+  tags: {}
+  orgIdentifier: "default"
+  projectIdentifier: "TcSvcOverrideTest"
   pipeline:
     identifier: "pBugremote"
     stages:
@@ -45,6 +49,3 @@ inputSet:
                   serviceRef: "S1Copy"
                 environment:
                   environmentRef: "eref"
-  name: "cdinput1"
-  orgIdentifier: "default"
-  projectIdentifier: "TcSvcOverrideTest"
