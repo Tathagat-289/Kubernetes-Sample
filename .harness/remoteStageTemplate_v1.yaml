@@ -11,8 +11,7 @@ template:
     spec:
       deploymentType: Kubernetes
       service:
-        serviceRef: <+input>
-        serviceInputs: <+input>
+        serviceRef: S1Copy
       environment:
         environmentRef: <+input>
         deployToAll: false
