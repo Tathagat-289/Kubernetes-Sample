@@ -1,5 +1,5 @@
 pipeline:
-  name: remote1
+  name: remote
   identifier: remote
   projectIdentifier: TcSvcOverrideTest
   orgIdentifier: default
