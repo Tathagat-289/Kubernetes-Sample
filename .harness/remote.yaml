@@ -21,11 +21,6 @@ pipeline:
             infrastructureDefinitions: <+input>
           execution:
             steps:
-              - step:
-                  name: Rollout Deployment
-                  identifier: rolloutDeployment
-                  type: K8sRollingDeploy
-                  timeout: 10m
                   spec:
                     skipDryRun: false
                     pruningEnabled: false
