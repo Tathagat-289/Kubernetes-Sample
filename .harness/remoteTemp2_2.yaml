@@ -40,4 +40,4 @@ template:
             - AllErrors
           action:
             type: StageRollback
-  versionLabel: "3"
+  versionLabel: "2"
