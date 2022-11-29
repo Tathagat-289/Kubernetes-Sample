@@ -20,7 +20,7 @@ template:
         serviceOverrideInputs: <+input>
         infrastructureDefinitions: <+input>
       execution:
-        steps:
+#         steps:
           - step:
               name: step1
               identifier: step1
