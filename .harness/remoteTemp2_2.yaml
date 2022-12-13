@@ -11,6 +11,14 @@ template:
       deploymentType: Kubernetes
       service:
         serviceRef: S1
+        serviceInputs:
+          serviceDefinition:
+            type: Kubernetes
+            spec:
+              artifacts:
+                primary:
+                  primaryArtifactRef: <+input>
+                  sources: <+input>
       environment:
         environmentRef: <+input>
         deployToAll: false
