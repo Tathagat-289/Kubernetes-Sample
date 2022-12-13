@@ -2,7 +2,7 @@ template:
   name: remote_local_temp
   identifier: remote_local_temp
   versionLabel: "1"
-  type: Stage
+  type: Step
   projectIdentifier: p1
   orgIdentifier: default
   tags: {}
