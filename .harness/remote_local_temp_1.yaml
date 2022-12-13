@@ -1,7 +1,7 @@
 template:
   name: remote_local_temp
   identifier: remote_local_temp
-  versionLabel: "1"
+  versionLabel: "2"
   type: Stage
   projectIdentifier: p1
   orgIdentifier: default
