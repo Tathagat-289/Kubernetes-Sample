@@ -2,7 +2,7 @@ template:
   name: remote_local_temp
   identifier: remote_local_temp
   versionLabel: "1"
-  type: Step
+  type: Stage
   projectIdentifier: p1
   orgIdentifier: default
   tags: {}
@@ -31,7 +31,7 @@ template:
               type: K8sRollingDeploy
               timeout: 10m
               spec:
-                skipDryRun: false
+                skipDryRun: true
                 pruningEnabled: false
         rollbackSteps:
           - step:
