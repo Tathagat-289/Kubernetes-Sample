@@ -2,7 +2,7 @@ pipeline:
   name: remotePms
   identifier: remotePms
   projectIdentifier: TcSvcOverrideTest
-  orgIdentifier: defaultrandom
+  orgIdentifier: default
   tags: {}
   stages:
     - stage:
