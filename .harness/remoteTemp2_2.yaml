@@ -1,7 +1,7 @@
 template:
-  name: remoteTemp2
+  name: remoteTemp3
   identifier: remoteTemp2
-  type: Step
+  type: Stage
   projectIdentifier: TcSvcOverrideTest
   orgIdentifier: default
   tags: {}
