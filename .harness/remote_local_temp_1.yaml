@@ -1,9 +1,9 @@
 template:
   name: remote_local_temp
   identifier: remote_local_temp
-  versionLabel: "2"
+  versionLabel: "1"
   type: Stage
-  projectIdentifier: p2
+  projectIdentifier: p1
   orgIdentifier: default
   tags: {}
   spec:
