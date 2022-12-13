@@ -1,6 +1,6 @@
 template:
   name: remoteTemp2
-  identifier: remoteTemp2
+  identifier: remoteTemp2Random
   type: Stage
   projectIdentifier: TcSvcOverrideTest
   orgIdentifier: default
