@@ -1,6 +1,6 @@
 pipeline:
   name: remotePms
-  identifier: remotePmsRandom
+  identifier: remotePms
   projectIdentifier: TcSvcOverrideTest
   orgIdentifier: default
   tags: {}
@@ -23,7 +23,7 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: Rollout Deployment Random
+                  name: Rollout Deployment
                   identifier: rolloutDeployment
                   type: K8sRollingDeploy
                   timeout: 10m
@@ -32,7 +32,7 @@ pipeline:
                     pruningEnabled: false
             rollbackSteps:
               - step:
-                  name: Rollback Rollout Deployment Random
+                  name: Rollback Rollout Deployment
                   identifier: rollbackRolloutDeployment
                   type: K8sRollingRollback
                   timeout: 10m
