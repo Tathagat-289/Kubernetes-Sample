@@ -31,7 +31,7 @@ template:
               type: K8sRollingDeploy
               timeout: 10m
               spec:
-                skipDryRun: true
+                skipDryRun: false
                 pruningEnabled: false
         rollbackSteps:
           - step:
