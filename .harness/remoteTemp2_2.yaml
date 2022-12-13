@@ -48,4 +48,4 @@ template:
             - AllErrors
           action:
             type: StageRollback
-  versionLabel: "2"
+  versionLabel: "random"
