@@ -3,7 +3,7 @@ template:
   identifier: remote_local_temp
   versionLabel: "2"
   type: Stage
-  projectIdentifier: p1
+  projectIdentifier: p2
   orgIdentifier: default
   tags: {}
   spec:
