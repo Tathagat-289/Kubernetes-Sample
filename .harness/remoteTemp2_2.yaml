@@ -2,7 +2,7 @@ template:
   name: remoteTemp2
   identifier: remoteTemp2
   type: Stage
-  projectIdentifier: TcSvcOverrideTest
+  projectIdentifier: TcSvcOverrideTestRandom
   orgIdentifier: default
   tags: {}
   spec:
