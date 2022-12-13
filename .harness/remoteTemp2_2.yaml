@@ -3,7 +3,7 @@ template:
   identifier: remoteTemp2
   type: Stage
   projectIdentifier: TcSvcOverrideTest
-  orgIdentifier: default
+  orgIdentifier: JamesDemo
   tags: {}
   spec:
     type: Deployment
