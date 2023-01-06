@@ -1,5 +1,5 @@
 template:
-  name: remoteTemp3
+  name: remoteTemp2
   identifier: remoteTemp2
   type: Stage
   projectIdentifier: TcSvcOverrideTest
