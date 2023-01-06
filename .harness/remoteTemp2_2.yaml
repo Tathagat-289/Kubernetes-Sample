@@ -10,7 +10,7 @@ template:
     spec:
       deploymentType: Kubernetes
       service:
-        serviceRef: S1
+        serviceRef: newSimpleService
       environment:
         environmentRef: <+input>
         deployToAll: false
