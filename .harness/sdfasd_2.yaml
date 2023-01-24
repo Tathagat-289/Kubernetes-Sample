@@ -1,0 +1,20 @@
+template:
+  name: sdfasd
+  identifier: sdfasd
+  type: Step
+  projectIdentifier: AmitTest
+  orgIdentifier: GitXOrg
+  tags: {}
+  spec:
+    timeout: 9m
+    type: ShellScript
+    spec:
+      shell: Bash
+      onDelegate: true
+      source:
+        type: Inline
+        spec:
+          script: <+input>
+      environmentVariables: []
+      outputVariables: []
+  versionLabel: "2"
