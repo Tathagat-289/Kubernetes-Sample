@@ -1,0 +1,42 @@
+pipeline:
+  name: Deploy presto-gateway to dev
+  identifier: Presto_Gateway_dev
+  allowStageExecutions: false
+  projectIdentifier: TcSvcOverrideTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: Deploy presto-gateway
+        identifier: Deploy_service
+        template:
+          templateRef: org.Rolling_Deploy_V2
+          templateInputs:
+            type: Deployment
+            spec:
+              serviceConfig:
+                serviceDefinition:
+                  type: Kubernetes
+                  spec:
+                    variables:
+                      - name: desired_replicas
+                        type: Number
+                        value: <+input>
+                      - name: max_replicas
+                        type: Number
+                        value: <+input>
+                    artifacts:
+                      primary:
+                        type: Ecr
+                        spec:
+                          imagePath: sixsense/presto-gateway
+                          tag: <+input>
+                serviceRef: prestogateway
+              infrastructure:
+                environmentRef: devmain
+                infrastructureDefinition:
+                  type: KubernetesDirect
+                  spec:
+                    namespace: <+input>
+  storeType: ""
+  remoteType: create
