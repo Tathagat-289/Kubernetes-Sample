@@ -1,5 +1,5 @@
 pipeline:
-  name: Deploy presto-gateway to dev
+  name: Deploy presto-gateway to dev1
   identifier: Presto_Gateway_dev
   allowStageExecutions: false
   projectIdentifier: TcSvcOverrideTest
