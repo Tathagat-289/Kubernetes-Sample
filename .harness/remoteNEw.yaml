@@ -1,5 +1,5 @@
 pipeline:
-  name: Deploy presto-gateway to dev2
+  name: Deploy presto-gateway to dev3
   identifier: Presto_Gateway_dev
   allowStageExecutions: false
   projectIdentifier: TcSvcOverrideTest
@@ -38,5 +38,4 @@ pipeline:
                   type: KubernetesDirect
                   spec:
                     namespace: <+input>
-  storeType: ""
   remoteType: create
