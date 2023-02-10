@@ -30,6 +30,10 @@ pipeline:
                   spec:
                     skipDryRun: false
                     pruningEnabled: false
+                  when:
+                    stageStatus: Success
+                    condition: "false"
+                  failureStrategies: []
             rollbackSteps:
               - step:
                   name: Rollback Rollout Deployment
