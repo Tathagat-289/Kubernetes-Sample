@@ -49,3 +49,13 @@ pipeline:
                 - AllErrors
               action:
                 type: StageRollback
+    - stage:
+        name: s2
+        identifier: s2
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: p3
+          project: p1
+          outputs: []
