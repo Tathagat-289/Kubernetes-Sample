@@ -45,3 +45,9 @@ pipeline:
                 - AllErrors
               action:
                 type: StageRollback
+    - stage:
+        name: s2
+        identifier: s2
+        template:
+          templateRef: stagetemp3
+          versionLabel: "1"
