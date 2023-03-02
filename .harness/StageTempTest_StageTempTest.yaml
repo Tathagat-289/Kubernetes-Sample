@@ -1,0 +1,19 @@
+template:
+  name: StageTempTest
+  identifier: StageTempTest
+  versionLabel: StageTempTest
+  type: Stage
+  projectIdentifier: TemplateGitSyncTest
+  orgIdentifier: PipelinesApiAutomationOrg
+  tags: {}
+  spec:
+    type: Custom
+    spec:
+      execution:
+        steps:
+          - step:
+              name: WaitStepViaTemplate
+              identifier: WaitStepViaTemplate
+              template:
+                templateRef: stepTest
+                versionLabel: stepTest
