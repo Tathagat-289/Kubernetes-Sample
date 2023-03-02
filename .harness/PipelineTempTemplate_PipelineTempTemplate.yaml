@@ -1,0 +1,16 @@
+template:
+  name: PipelineTempTemplate
+  identifier: PipelineTempTemplate
+  versionLabel: PipelineTempTemplate
+  type: Pipeline
+  projectIdentifier: TemplateGitSyncTest
+  orgIdentifier: PipelinesApiAutomationOrg
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: StageUsingWaitStepTemplate
+          identifier: StageUsingWaitStepTemplate
+          template:
+            templateRef: StageTempTest
+            versionLabel: StageTempTest
