@@ -1,0 +1,12 @@
+template:
+  name: stepTest
+  identifier: stepTest
+  versionLabel: stepTest
+  type: Step
+  projectIdentifier: TemplateGitSyncTest
+  orgIdentifier: PipelinesApiAutomationOrg
+  tags: {}
+  spec:
+    type: Wait
+    spec:
+      duration: 10m
