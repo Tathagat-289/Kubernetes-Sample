@@ -1,0 +1,9 @@
+pipeline:
+  name: TemplateTestPipeline
+  identifier: TemplateTestPipeline
+  template:
+    templateRef: PipelineTempTemplate
+    versionLabel: PipelineTempTemplate
+  tags: {}
+  projectIdentifier: TemplateGitSyncTest
+  orgIdentifier: PipelinesApiAutomationOrg
