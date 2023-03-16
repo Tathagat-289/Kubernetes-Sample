@@ -1,5 +1,6 @@
 inputSet:
   name: remoteInput
+  tags: {}
   identifier: remoteInput
   orgIdentifier: default
   projectIdentifier: TcSvcOverrideTest
@@ -37,4 +38,4 @@ inputSet:
                         template:
                           templateInputs:
                             type: ShellScript
-                            timeout: 10m
+                            timeout: 20m
