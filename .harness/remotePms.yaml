@@ -16,9 +16,8 @@ pipeline:
             serviceRef: <+input>
             serviceInputs: <+input>
           environment:
-            environmentRef: <+input>
+            environmentRef: e1
             deployToAll: false
-            environmentInputs: <+input>
             infrastructureDefinitions: <+input>
           execution:
             steps:
